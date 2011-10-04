@@ -1,0 +1,15 @@
+* Thu May 26 2011 Anas Nashif <anas.nashif@intel.com> - 0.1.10
+- Do not depend on python
+
+* Thu Jun 24 2010 Yan Yin <yan.yin@intel.com> - 0.1.10
+- Split a sub-doc package
+
+* Tue Apr 21 2009 Ding Jian-feng <jian-feng.ding@intel.com> 0.1.10
+- Upgrade to 0.1.10, changed the source URL, and dropped patches
+
+* Thu Dec 25 2008 Arjan van de Ven <arjan@linux.intel.com> 0.1.9
+- Make the Source URL resolvable
+
+* Tue Dec 16 2008 Arjan van de Ven <arjan@linux.intel.com> 0.1.9
+- Create standardized spec file
+

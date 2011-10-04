@@ -1,0 +1,33 @@
+Name: gamin
+Summary: Library providing the FAM File Alteration Monitor API
+Version: 0.1.10
+Release: 1
+Group: System/Libraries
+License: LGPL
+URL: http://www.gnome.org/~veillard/gamin/
+Sources:
+    - http://download.gnome.org/sources/gamin/0.1/%{name}-%{version}.tar.bz2
+Description: |
+    This C library provides an API and ABI compatible file alteration
+    monitor mechanism compatible with FAM but not dependent on a system wide
+    daemon.
+
+PkgBR:
+    - automake
+    - libtool
+PkgConfigBR:
+    - glib-2.0
+Configure: configure
+SubPackages:
+    - Name: devel
+      Summary: Libraries, includes, etc. to embed the Gamin library
+      Group: Development/Libraries
+      Description: |
+          This C library provides an API and ABI compatible file alteration
+          monitor mechanism compatible with FAM but not dependent on a system wide
+          daemon.
+    - Name: doc
+      Summary: Documents for gamin
+      Group: Documentation
+      Description: |
+          This package provides documents for gamin.
