@@ -7,6 +7,8 @@ License: LGPL
 URL: http://www.gnome.org/~veillard/gamin/
 Sources:
     - http://download.gnome.org/sources/gamin/0.1/%{name}-%{version}.tar.bz2
+Patches:
+    - 17_deprecated_const_return.patch
 Description: |
     This C library provides an API and ABI compatible file alteration
     monitor mechanism compatible with FAM but not dependent on a system wide
