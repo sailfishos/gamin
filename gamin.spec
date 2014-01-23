@@ -15,6 +15,7 @@ URL:        http://www.gnome.org/~veillard/gamin/
 Source0:    http://download.gnome.org/sources/gamin/0.1/%{name}-%{version}.tar.bz2
 Source100:  gamin.yaml
 Patch0:     17_deprecated_const_return.patch
+Patch1:     gamin-aarch64.patch
 Requires(post): /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
 BuildRequires:  pkgconfig(glib-2.0)
@@ -55,6 +56,7 @@ This package provides documents for gamin.
 
 # 17_deprecated_const_return.patch
 %patch0 -p1
+%patch1 -p1
 # >> setup
 # << setup
 
@@ -62,7 +64,7 @@ This package provides documents for gamin.
 # >> build pre
 # << build pre
 
-%configure --disable-static
+%configure --disable-static --disable-python
 make %{?jobs:-j%jobs}
 
 # >> build post
@@ -104,6 +106,7 @@ rm -rf %{buildroot}
 %{_libdir}/lib*.so
 %{_includedir}/fam.h
 %{_libdir}/pkgconfig/gamin.pc
+%{_libdir}/python2.7/*
 # << files devel
 
 %files doc
